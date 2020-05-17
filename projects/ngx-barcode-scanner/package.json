@@ -1,0 +1,23 @@
+{
+  "name": "ngx-barcode-scanner",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.1.7",
+    "@angular/core": "^9.1.7",
+    "tslib": "^1.10.0"
+  },
+  "dependencies": {
+    "@ericblade/quagga2": "^1.0.4"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "description": "Angular 9+ barcode scanner component using Quagga2",
+  "keywords": [
+    "angular",
+    "ngx",
+    "barcode",
+    "scanner",
+    "quagga2"
+  ]
+}
