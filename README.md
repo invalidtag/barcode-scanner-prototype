@@ -1,5 +1,7 @@
 # BarcodeScannerPrototype
 
+The work here is based on [ngx-barcode-scanner](https://github.com/eisberg-labs/ngx-barcode-scanner).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
 ## Development server
