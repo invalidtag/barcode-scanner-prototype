@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
-import {QuaggaJSConfigObject} from "@ericblade/quagga2";
+import {QuaggaJSConfigObject} from "quagga";
 import {NgxBarcodeScannerService} from "./ngx-barcode-scanner.service";
 import {Subscription} from "rxjs";
 
@@ -24,7 +24,7 @@ export class NgxBarcodeScannerComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // document.documentElement.requestFullscreen().catch(err => console.log('Failed to request full-screen: ' + err));
     this.setConfig();
-    const threshold = isNaN(this.errorThreshold) ? 0.1 : this.errorThreshold;
+    const threshold = isNaN(this.errorThreshold) ? 0.05 : this.errorThreshold;
     this.serviceSubscription = this.service.start(this.config, threshold)
       .subscribe((value) => {
         this.valueChange.emit(value);
