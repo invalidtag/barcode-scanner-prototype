@@ -1,0 +1,6 @@
+<ngx-barcode-scanner
+  (valueChange)="onValueChanged($event)"
+  [codes]="['code_128', 'ean', 'upc', 'upc_e', 'ean_8']"
+  [errorThreshold]="0.1"
+  (exception)="onError($event)">
+</ngx-barcode-scanner>
